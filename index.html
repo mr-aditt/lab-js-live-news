@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <h2>ProGrad News</h2>
+            </div>
+            <div class="nav-links">
+                <ul class="links">
+                    <li class="top-news"><a href="#">Top News</a></li>
+                    <li><a href="#">Country</a>
+                        <i class='bx bxs-chevron-down arrow country-arrow'></i>
+                        <ul class="country-sub-menu sub-menu">
+                            <li><a href="#" id="india" onclick="countryIN()">IN: India</a></li>
+                            <li><a href="#" id="united-states" onclick="countryUS()">US: United States</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <article class="news-container">
+            <figure id="fig-1">
+
+            </figure>
+            <strong id="news-1"></strong>
+            <span id="desc-1"></span>
+            <button>Read more</button>
+        </article>
+        <article class="news-container">
+            <figure id="fig-2">
+
+            </figure>
+            <strong id="news-2"></strong>
+            <span id="desc-2"></span>
+            <button>Read more</button>
+        </article>
+        <article class="news-container">
+            <figure id="fig-3">
+
+            </figure>
+            <strong id="news-3"></strong>
+            <span id="desc-3"></span>
+            <button>Read more</button>
+        </article>
+    </div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./app.js"></script>
+
+</html>
